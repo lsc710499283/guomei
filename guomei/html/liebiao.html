@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/liebiao.css"/>
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.11.0.js"></script>
+	<script src="../js/template.js"></script>
+	<script src="../js/starmove.js"></script>
+	</head>
+	<body>
+			<div id="xxtop">
+		<div id="xtop">
+			<ul>
+				<li id="topli1"><a><i></i>国美plus</a></li>
+				<li class="topfuhao"></li>
+				<li id="topli2"><a id="gee1">国美会员<em></em></a>
+					<div id="huiyuandenglu">
+						<div id="da1"><b></b>欢迎来到国美在线，请<a>登录！</a></div>
+						<div id="da2">
+							<p>我的特权<a>会员俱乐部</a></p>
+							
+						</div>
+				</li>
+				<li><a>登录</a></li>
+				<li><a>注册</a></li>
+			</ul>
+			<ul class="topyoubiandeul" id="topulyou">
+				<li><a>我的订单</a></li>
+				<li id="topli3"><a id="gee2">我的国美<em></em></a>
+					<div id="wodeguomei">
+						<h6>我的国美，<a>请登录！</a></h6>
+						<ol>
+							<h5><a>待处理订单</a></h5>
+							<h5><a>我的收藏</a></h5>
+							<h5><a>我的金融</a></h5>
+							<h5><a>个人资料</a></h5>
+						</ol>
+						<div>
+							<nav><p><a>红券</a></p><h4>-</h4></nav>
+							<nav><p><a>蓝券</a></p><h4>-</h4></nav>
+							<nav><p><a>店铺券</a></p><h4>-</h4></nav>
+							<nav><p style="border: 0;"><a>购物券</a></p><h4>-</h4></nav>
+						</div>
+						<h3></h3>
+					</div>
+				</li>
+				<li class="topfuhao"></li>
+				<li><a>企业采购</a></li>
+				<li id="topli4"><a id="gee3"><i></i>服务中心<em></em></a>
+					<div id="fuwuzhongxin">
+						<h6><a>售后服务</a></h6>
+						<ol>
+							<h5><a>物流与配送</a></h5>
+							<h5><a>上门与安装</a></h5>
+							<h5><a>退换货服务</a></h5>
+							<h5><a>手机维修</a></h5>
+							<h5><a>延保服务</a></h5>
+							<h5><a>家电回收</a></h5>
+						</ol>
+						<h6><a>帮助服务</a></h6>
+						<ol>
+							<h5><a>焦点问题</a></h5>
+							<h5><a>账户安全</a></h5>
+							<h5><a>签收与验货</a></h5>
+							<h5><a>分期付款</a></h5>
+							<h5><a>退款说明</a></h5>
+							<h5><a>优惠券说明</a></h5>
+						</ol>
+						<h4>在线客服</h4>
+					</div>
+				</li>
+				<li><a>网站导航<em></em></a></li>
+				<li class="topfuhao"></li>
+				<li><a><i></i>手机国美<em></em></a></li>
+			</ul>
+		</div>
+	</div>
+<script>
+	$('#topli2').hover(function(){
+		$('#gee1').css({"background":"#fff","border":"1px solid #e6e6e6","border-bottom":"none","color":"red","z-index":201});
+		$("#huiyuandenglu").css({"display":"block","z-index":200});
+	},function(){
+		$('#gee1').css({"background":"#f8f8f8","border":"none","color":"#5e5e5e"});
+		$("#huiyuandenglu").css("display","none");
+	})
+	
+	$('#topli3').hover(function(){
+		$('#gee2').css({"background":"#fff","border":"1px solid #e6e6e6","border-bottom":"none","color":"red"});
+		$("#wodeguomei").css("display","block");
+	},function(){
+		$('#gee2').css({"background":"#f8f8f8","border":"none","color":"#5e5e5e"});
+		$("#wodeguomei").css("display","none");
+	})
+	
+	$('#topli4').hover(function(){
+		$('#gee3').css({"background":"#fff","border":"1px solid #e6e6e6","border-bottom":"none","color":"red"});
+		$("#fuwuzhongxin").css("display","block");
+	},function(){
+		$('#gee3').css({"background":"#f8f8f8","border":"none","color":"#5e5e5e"});
+		$("#fuwuzhongxin").css("display","none");
+	})
+	
+</script>
+	<!--  头部结束
+    -->
+	<div id="top2">
+		<a id="logo"></a><a id="gif"></a>
+		<div id="topsousuo">
+			<div id="sousuobiankuang">
+				<input id="sousuo" placeholder="超级电器节，6.18元秒iPhone"/>
+				<button id="sousuobtn">搜索</button>
+				<a><h5></h5></a>
+			</div>
+			<p>
+				<a style="color: #d7000f;;">返现700元</a><a>返258元</a><a>满99减30</a><a>落地扇79元</a><a>iPad</a><a>国美K1</a><a>满199减100</a><a>992抢电视</a>
+			</p>
+		</div>
+		<div id="topgouwu">
+			<a id="topgouwuakuangjia">
+				<em id="gouwucheem">
+					<span style="width:16px;position: absolute;z-index:20;background: #A5A5A5;height:18px;line-height: 18px;padding:0 3px;text-align: center;top: -18px;left: 15px;"><b id="gouwucheshuzi">0</b><i></i></span>
+				</em>
+				<span>购物车是空的</span>
+				<b id="xiaojiantouB"></b>
+			</a>
+		</div>
+		
+	</div>
+	<script>
+		$('#sousuo').on("click",function(){$(this).attr("placeholder","");})
+		$('#sousuo').on("blur",function(){$(this).attr("placeholder","超级电器节，6.18元秒iPhone")})
+	</script>
+	<!--
+    	作者：710499283@qq.com
+    	时间：2017-05-25
+    	描述：
+    -->
+	<div id="navwai">
+		<h2 class="hover"><a>全部商品分类</a>
+			<ul id="navboxL">
+				<div id="kuozhannav">
+<!--
+	作者：710499283@qq.com
+	时间：2017-06-01
+	描述：此处使用模板。
+-->
+					<div id="kuozhanR" style="position: absolute;right: 0;top: 0;">
+						<div class="kuozhanRshang">
+							<a><img src="http://img11.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150925/酒水汇源.jpg"/></a>
+							<a><img src="http://gfs13.gomein.net.cn/T1kJLTBjLv1RCvBVdK.jpeg"/></a>
+							<a><img src="http://img12.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150925/酒水五粮液.jpg"/></a>
+							<a><img src="http://gfs12.gomein.net.cn/T1ECLTBQKT1RCvBVdK.jpeg"/></a>
+							<a><img src="http://gfs12.gomein.net.cn/T19V_vBsLv1RCvBVdK.jpg"/></a>
+							<a><img src="http://img10.gomein.net.cn/image/prodimg/ad_image/SI_1/201606/20160615/20160615170630.jpg"/></a>
+						</div>
+						<div class="nuozhanRxia"><img src="http://gfs11.gomein.net.cn/T1HVKvB5W_1RCvBVdK.jpg"/></div>
+					</div>
+				</div>
+			<h3><a>手机</a><a>充值</a><a>相机</a><a>智能数码</a></h3>
+			<h3><a>电脑</a><a>办公配件</a></h3>
+			<h3><a>电视</a><a>影音</a><a>智能</a><a>国美管家</a></h3>
+			<h3><a>空调</a><a>冰箱</a><a>洗衣机</a></h3>
+			<h3><a>厨房卫浴</a><a>生活电器</a><a>净化器</a></h3>
+			<h3><a>食品酒水</a><a>母婴玩具</a></h3>
+			<h3><a>医疗保健</a><a>美妆个护</a></h3>
+			<h3><a>服饰鞋帽</a><a>箱包奢品</a></h3>
+			<h3><a>运动户外</a><a>钟表首饰</a></h3>
+			<h3><a>住宅家具</a><a>家装建材</a><a>装修</a></h3>
+			<h3><a>床品家纺</a><a>家居日用</a><a>家装城</a></h3>
+			<h3><a>汽车整车</a><a>汽车用品</a></h3>
+			<h3><a>黄金收藏</a><a>文化艺术</a></h3>
+			<h3><a>旅行</a><a>电影票</a><a>演出票</a><a>游戏</a></h3>
+			<h3><a>金融理财</a><a>基金理财</a></h3>
+		</ul>
+		</h2>
+		<ul id="nav">
+			<li><a>圈子</a></li>
+			<li><a>真划算</a></li>
+			<li><a>服装城</a></li>
+			<li><a>超市</a></li>
+			<li><a>超市</a><span class="nav_new"></span></li>
+			<li><a>国美电器</a></li>
+			<li><a>汽车</a></li>
+			<li><a>海外购</a></li>
+			<li><a>智能</a></li>
+			<li><a>管家</a></li>
+			<li><a>金融</a><span class="nav_hot"></span></li>
+		</ul>
+		<div id="xiaolunbo">
+			<div id="xianshiqu">
+				<ul id="demo_lunbo">
+					<li><img src="https://gfs4.gomein.net.cn/T1MZKvB_hv1RCvBVdK"></li>
+					<li><img src="https://gfs6.gomein.net.cn/T1TZ_vB7dv1RCvBVdK"></li>
+					<li><img src="https://gfs8.gomein.net.cn/T1SEAvBsKT1RCvBVdK"</li>
+				</ul>
+			</div>
+		
+			<script>
+				var lunbo = document.getElementById("demo_lunbo");
+				var ali = lunbo.getElementsByTagName('li');
+				var timer = null;
+				var i = 0;
+				var kelong = ali[0].cloneNode(true);
+				lunbo.appendChild(kelong);
+				timer = setInterval(function move(){
+					if(i>=ali.length-1){
+						lunbo.style.top = 0;
+						i=0;
+					}
+					i++;
+					startMove(lunbo,{"top":-40*i});
+				},2000);
+			</script>
+		</div>
+	</div>
+	<script type="text/html" id="navjs">
+					{{each lists as value}}
+					<div class="kuozhanL">
+						<div class="navtop">
+							{{each value.navtop as aaa}}
+							<a>{{aaa}} ></a>
+							{{/each}}
+						</div>
+						<div class="navcon">
+							{{each value.tit as bbb}}
+							<div class="tit">{{bbb.qaz}}</div>
+							<ul class="navlist">
+								{{each bbb.wsx as ccc}}
+								<a>{{ccc}}</a>
+								{{/each}}
+							</ul>
+							{{/each}}
+						</div>
+					</div>
+					{{/each}}
+</script>
+<script>
+	$(function(){
+		$('.hover').hover(function(){
+			$('#navboxL').css("display","block")
+		},function(){
+			$('#navboxL').css("display","none")
+		})
+		$.get("../js/kuozhannav.json",function(data){
+			let html1=template("navjs",{"lists":data});
+			$("#kuozhannav").prepend(html1);
+			$('#navboxL').on("mouseenter","h3",function(){
+				$('#kuozhannav').css("display","block");
+				$('.kuozhanL').hide();
+				var _index = $(this).index()-1;
+				$("#kuozhannav").find(".kuozhanL").eq(_index).show();
+			})
+			$('#navboxL').on("mouseleave",function(){	
+				$('#kuozhannav').css("display","none");
+				$('.kuozhanL').hide();
+			})
+		})		
+	})
+</script>
+			</ul>
+		<div id="youbiankuang">
+			<div class="tubiao"><i></i></div>
+			<div class="tubiao"><i></i></div>
+			<div class="tubiao"><i></i></div>
+			<div class="tubiao"><i></i></div>
+			<div class="tubiao"><i></i></div>
+		</div>
+	
+	
+	
+	
+	
+	
+	</body>
+</html>

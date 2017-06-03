@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/*其他页面的样式*/
+
+header {
+	margin: 0 auto;
+	width: 990px;
+	height:100px;
+}
+#logo{margin:18px 40px 0 0;width: 128px;height:92px;float: left;}
+header h2{font-size: 28px;font-weight: 200;padding-top: 44px;height:30px;width: 123px;float: left;font-family: "黑体";}
+
+#conbg{
+	width:100%;height:480px;margin:0 auto;background:url(https://gfs11.gomein.net.cn/T1zXDvBjET1RCvBVdK.png) center;
+}
+#con{
+	width:1200px;height:480px;margin: 0 auto;
+}
+#d1{
+	width:350px; height:368px;background:#fff; position: relative; float: right;    margin-top: 24px;
+    margin-right: 105px;
+}
+#ul1{width:350px;border-bottom: 1px solid #eee;}
+#ul1 li{float: left; width:48%;text-align: center;height:54px;line-height:54px;}
+#ul1 li:nth-of-type(2){float: right;}
+#ul1 li a{font:500 18px "微软雅黑";display: inline-block;width:168px;height:40px;}
+.hongdi{color: red;}
+#d2{
+	width:320px;height:241px; padding: 25px 11px 0 19px;
+}
+#d2 p{    font-family: '宋体';
+    color: #5e5e5e;padding-top: 13px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 14px;}
+#d2 p a{color: red; padding: 0px 7px;}
+#dd1{
+	width:165px;height:165px;margin: 0 auto;border: 1px solid #ddd;
+	background: url(https://login.gome.com.cn/getQrcode.no?width=165&height=165&message=4d91689&flag=login);
+}
+#d3{
+	 background: #eee; opacity: .3;border-top: 1px solid #bbb;
+	    padding: 9px 20px;
+}
+#d4{
+	width:300px;height:28px;font-size: 12px;
+}
+#d4 a{ padding: 0 4px;    color: #000}
+
+
+#dd2{
+	width:297px;height:242px; padding: 25px 23px 0 30px;  display: none;
+}
+#dd2 input{
+	padding: 8px 10px 7px;
+    width: 268px;
+    height: 25px;border: 1px solid #CCC;
+    font-family: Arial,simsun;
+    outline: 0 none;
+    color: #333;
+    font-size: 14px;
+    line-height: 21px;
+    z-index: 2;
+    margin-bottom: 15px;
+}
+#dd2 #btn{
+	width: 290px;padding: 0;background: red; color: #fff; letter-spacing: 10px;
+    height: 42px;border: 1px solid #CCC; margin: 0;font-size: 18px; opacity: .7;
+}
+#dd2 #check{
+	width:16px; margin: 0; padding: 0; height:16px;
+}
+#dd2 p{font-size: 12px; height:34px;}
+#dd2 a{float: right; padding: 0 3px;}
+
+
+footer{
+	width:990px; height:185px; margin: 0 auto; padding-top: 20px;	
+}
+#u1{
+	width: 600px;height:44px;
+}
+#u1 li{
+	float: left; padding-right: 13px;
+}
+#u1 a{
+	font-size: 12px;color:#666;
+}
+.fuhao{font-size:9px;color: #aaa;}
+.ppp2{
+	font: 12px/22px Arial;color: #999;
+}
+#zuihou{
+	width:990px;margin: 5px auto 0;padding: 10px 0 25px;border-top: 1px solid #e6e6e6;
+}
+#zuihou i{width:35px;height: 35px;display: block;float: left;}
+#zuihou b{padding: 0 30px 0 5px;width: 53px;height:36px;display: block;float: left; font: 12px/18px "\65b0\5b8b\4f53";
+    color: #999;}
+#zuihou i:nth-of-type(1){background: url(https://misc.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) 0 -180px;}
+#zuihou i:nth-of-type(2){background: url(https://misc.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) -35px -180px;}
+#zuihou i:nth-of-type(3){background: url(https://misc.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) -70px -180px;}
+#zuihou i:nth-of-type(4){background: url(https://misc.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) -105px -180px;}
+#zuihou i:nth-of-type(5){background: url(https://misc.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) -140px -180px;}

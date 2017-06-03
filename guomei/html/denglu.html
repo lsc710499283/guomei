@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+<link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/denglu.css" />
+<script src="../js/jquery-1.11.0.js"></script>
+	</head>
+	<body>
+		<header><div id="logo"><img src="https://misc.gomein.net.cn/images/regfront/register/logo.png" ></div>
+			<h2>欢迎注册</h2>
+		</header>
+		
+		<div id="conbg">
+			<div id="con">
+				<div id="d1">
+					<ul id="ul1">
+						<li><a class="hongdi">扫码登录</a></li><b style="color: #f4f4f4;height:54px;line-height: 54px;">|</b>
+						<li><a>账户登录</a></li>
+					</ul>
+					<div id="d2">
+						<div id="dd1"></div>
+						<p>打开手机<a>国美plus</a>|<a>国美在线</a></p>
+						<p>扫一扫登录</p>
+						<p style="padding: 0; text-align: right;font-size: 14px;"><a href="" style="color:cornflowerblue">免费注册</a></p>
+					</div>
+					<div id="dd2">
+						<input value="手机号码/用户名/邮箱/门店会员卡号" />
+						<input value="密码" />
+						<p><input type="checkbox" id="check" />自动登录<a>忘记密码</a><a>|</a><a>免费注册</a></p>
+						<input type="button" value="登录" id="btn">
+					</div>
+					<div id="d3">
+						<div id="d4">
+							<a href="">门店会员首次登录</a>|
+							<a href="">QQ</a>|
+							<a href="">微信</a>|
+							<a href="">微博</a>|
+							<a href="">美付宝</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<footer>
+			<ul id="u1">
+				<li><a>国美集团</a></li>
+				<li><a>多边金都</a></li>
+				<li><a>国之美</a></li>
+				<li><a>关于国美在线</a></li>
+				<li><a>加入我们</a></li>
+				<li class="fuhao">|</li>
+				<li><a>品牌大全</a></li>
+				<li><a>商品专题</a></li>
+				<li><a>批发大全</a></li>
+				<li><a>热词搜索</a></li>
+				<li><a>友情链接</a></li>
+				<li><a>风险监测</a></li>
+				<li class="fuhao">|</li>
+				<li><a>销售联盟</a></li>
+				<li><a>商家入驻</a></li>
+			</ul>
+			<p class="ppp2">国美在线电子商务有限公司&nbsp;办公地址:上海市嘉定区沪宜公路3163-3199号一楼A区&nbsp;客服电话:4008708708&nbsp;|&nbsp;本公司游戏产品适合18岁以上成年人使用</p>
+			<p class="ppp2">©2000-2017&nbsp;国美在线电子商务有限公司版权所有&nbsp;京公安网备11010502027062&nbsp;沪ICP备11009419号&nbsp;沪B2-20120004号</p>
+			<div id="zuihou">
+				<i></i><b style="width:60px">经营性网站备案信息</b>
+				<i></i><b>可信网站信用评价</b>
+				<i></i><b style="padding-top: 8px;">诚信网站</b>
+				<i></i><b>朝阳网络警察</b>
+				<i></i><b style=" width: 62px;padding-top: 8px;">网购大家评</b>
+			</div>
+		</footer>
+	</body>
+<script>
+	var num = Math.floor(Math.random()*3);
+	var imgsrc = ["https://gfs12.gomein.net.cn/T14NKvBvxT1RCvBVdK.gif","https://gfs11.gomein.net.cn/T1zXDvBjET1RCvBVdK.png","https://gfs12.gomein.net.cn/T1xNCvBsWT1RCvBVdK.gif"];
+	conbg.style.backgroundImage = "url("+imgsrc[num]+")";
+</script>
+<script>
+	var ali=ul1.getElementsByTagName('a');
+
+	
+	ali[0].onclick = function(){
+		d2.style.display = "block";
+		dd2.style.display = 'none';
+		$("#ul1 a").removeClass("hongdi");
+		this.className = "hongdi";
+	}
+	ali[1].onclick = function(){
+		d2.style.display = "none";
+		dd2.style.display = 'block';
+		$("#ul1 a").removeClass("hongdi");
+		this.className = "hongdi";
+	}
+</script>
+</html>

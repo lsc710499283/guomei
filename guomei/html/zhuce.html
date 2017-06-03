@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../css/zhuce.css" />
+	<style>
+		
+	</style>
+	<script src="../js/jquery-1.11.0.js"></script>
+	</head>
+	<body>
+		<header><div id="logo"><img src="https://misc.gomein.net.cn/images/regfront/register/logo.png" ></div>
+			<h2>欢迎注册</h2>
+		</header>
+		<div id="con">
+			<ul id="xuanxiang">
+				<li class="hongdi">个人用户注册</li>
+				<li>企业用户注册</li>
+			</ul>
+			<script>
+
+				var ali = xuanxiang.getElementsByTagName('li');
+				for(let i=0;i<ali.length;i++){
+					ali[i].onclick = function(){
+						for(let k=0;k<ali.length;k++){
+							ali[k].className="";
+						}
+						this.className = "hongdi";
+					}
+				}
+			</script>
+			<p id="pppp1">我已经注册，现在就 <a style="color: dodgerblue;">登录</a></p>
+			<ul id="biaoge">
+				<li><span>用户名：</span><input><div class="copdiv">4-20个字符，支持汉字、字母、数字及“-”、“_”组合"</div>
+					<div class="yanzheng">请输入用户名</div>
+				</li>
+				<li><span>设置密码：</span><input id="input1" type="password">
+					<div class="copdiv">6-20个字符，建议由字母，数字与符号两种以上组成</div>
+				<div class="yanzheng">请输入密码</div></li>
+				<li><span>确认密码：</span><input id="input2" type="password" disabled="disabled">
+					<div class="copdiv">请再次输入密码</div>	<div class="yanzheng">请输入密码</div>
+				</li>
+				<script>
+					input1.oninput = function(){
+						if(input1.value.length>=6){
+							input2.disabled = "";
+						}		
+					}
+				</script>
+				<li><span>手机号码：</span><input id="input3">
+					<div class="copdiv">请输入正确的手机号码</div>
+					<div class="yanzheng">手机号不能为空</div>
+				</li>
+				<li><span>滑动验证：</span><input id="input4" disabled="disabled" value="请按住滑块，拖动到最右边">
+					<em id="huakuai">>></em>
+					<script>
+						
+					</script>
+					<div class="copdiv"></div>
+				<div class="yanzheng"></div></li>
+				<li><span>短信验证码：</span><input style="width:133px"><a>获取短信验证码</a>
+					<div class="copdiv">请输入短信验证码</div>
+				<div class="yanzheng">请输入短信验证码</div></li>
+				<li><span>推荐码(选填)：</span><input id="input6" placeholder="填写推荐人 推荐码 帮好友赚收入"></li>
+				<script>
+					$('input').focus(function(){
+						$(this).css({"border":"1px solid #666"});
+					})
+					$('input').blur(function(){
+						$(this).css({"border":"1px solid #ddd"});
+					})
+					input6.onfocus = function(){
+						input6.placeholder="";
+					}
+					$("#input1").blur(function(){
+						
+					})
+					$("#input2").blur(function(){
+						
+					})
+					$("#input3").blur(function(){
+						if(input3.value!=input2.value){
+							aclass[2].innerHTML = "两次输入的密码不一致，请重新输入！"
+						}
+					})
+					$('input').focus(foo());
+					$('input').blur(fooo());
+					$('#input3').blur(checkPhone);
+					input3.onclick = function(){return false;}
+					var huakuai = document.getElementById("huakuai");
+					
+					huakuai.onclick = function(){
+						return false;
+					}
+					huakuai.onmousedown=function(ev){
+						
+						document.onmousemove=function(){
+							var ev = ev||event;
+							var x = ev.clientX - huakuai.offsetLeft;
+							var y = ev.clientY - huakuai.offsetTop;
+							if(x<-302){x=302};						
+							if(y!=0){y=0}
+							huakuai.style.left = x + "px";
+							huakuai.style.top  = y + "px";						
+							document.onmouseup=function(){
+								document.onmousemove=null;
+							}
+						}
+					}
+					function foo(){
+						var ainput = biaoge.getElementsByTagName('input');
+						var adiv = biaoge.getElementsByClassName('copdiv');
+						var aclass = biaoge.getElementsByClassName('yanzheng');
+						for(let i=0;i<6;i++){
+							if(i==4){ continue;}
+							ainput[i].onfocus=function(){
+								adiv[i].style.display = "block";
+								aclass[i].style.display = "none";
+							}
+						}
+					}
+					function fooo(){
+						var ainput = biaoge.getElementsByTagName('input');
+						var adiv = biaoge.getElementsByClassName('copdiv');
+						var aclass = biaoge.getElementsByClassName('yanzheng');
+						for(let i=0;i<6;i++){
+							if(i==4){continue;}
+							ainput[i].onblur=function(){
+								adiv[i].style.display = "none";
+								if(ainput[i].value==""){
+									aclass[i].style.display = "block";
+								}
+							}
+						}
+					}
+					
+function checkPhone(){ 
+    var phone = document.getElementById('input3').value;
+    var aclass = biaoge.getElementsByClassName('yanzheng');
+    if(!((/^1[34578]\d{9}$/).test(phone))){ 
+    	aclass[3].style.display = "block";
+    	aclass[3].innerHTML = "您输入的手机号码有误，请重新输入！"
+        return false; 
+    } 
+}					
+				</script>
+				<li><span></span><input id="tijiao" type="button" value="立即注册"></li>
+			</ul>
+		</div>
+		<footer>
+			<ul id="u1">
+				<li><a>国美集团</a></li>
+				<li><a>多边金都</a></li>
+				<li><a>国之美</a></li>
+				<li><a>关于国美在线</a></li>
+				<li><a>加入我们</a></li>
+				<li class="fuhao">|</li>
+				<li><a>品牌大全</a></li>
+				<li><a>商品专题</a></li>
+				<li><a>批发大全</a></li>
+				<li><a>热词搜索</a></li>
+				<li><a>友情链接</a></li>
+				<li><a>风险监测</a></li>
+				<li class="fuhao">|</li>
+				<li><a>销售联盟</a></li>
+				<li><a>商家入驻</a></li>
+			</ul>
+			<p class="ppp2">国美在线电子商务有限公司&nbsp;办公地址:上海市嘉定区沪宜公路3163-3199号一楼A区&nbsp;客服电话:4008708708&nbsp;|&nbsp;本公司游戏产品适合18岁以上成年人使用</p>
+			<p class="ppp2">©2000-2017&nbsp;国美在线电子商务有限公司版权所有&nbsp;京公安网备11010502027062&nbsp;沪ICP备11009419号&nbsp;沪B2-20120004号</p>
+			<div id="zuihou">
+				<i></i><b style="width:60px">经营性网站备案信息</b>
+				<i></i><b>可信网站信用评价</b>
+				<i></i><b style="padding-top: 8px;">诚信网站</b>
+				<i></i><b>朝阳网络警察</b>
+				<i></i><b style=" width: 62px;padding-top: 8px;">网购大家评</b>
+			</div>
+		</footer>
+	</body>
+	
+	
+<script>
+	$('#tijiao').click(function(){
+		$.post("../php/zhuce.php",{"mima":$('#input2').val(),"yonghuming":$("#input1").val()})
+	})
+</script>
+</html>

@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/*其他页面的样式*/
+
+header {
+	margin: 0 auto;
+	width: 990px;
+	height:100px;
+}
+#logo{margin:18px 40px 0 0;width: 128px;height:92px;float: left;}
+header h2{font-size: 28px;font-weight: 200;padding-top: 44px;height:30px;width: 123px;float: left;font-family: "黑体";}
+#con{
+	width:988px;height:562px;margin: 0 auto;border: 1px solid #ddd;margin-top: 68px;
+	position: relative; padding-bottom: 21px;background:url(https://gfs14.gomein.net.cn/T1rTJTBmJj1RCvBVdK.gif) no-repeat 580px -60px;
+}
+#xuanxiang{
+	width:308px;  height:42px; font-weight: 900;color: #555; position: absolute; left: 149px;top: -44px;
+}
+#xuanxiang li{
+	float: left; margin-right: 2px; text-align: center; line-height:42px; border: 1px solid #ddd;
+	background: #eee;width: 48%;
+}
+#xuanxiang .hongdi{
+	border-bottom: none; border-top: brown solid 2px; color: brown ;background: #fff;
+}
+#pppp1{
+	font-size: 12px; position: absolute;right: 20px; top: -24px;
+}
+#biaoge{
+	padding-top: 40px; color: #999;
+}
+#biaoge li{
+	height:38px;padding-bottom: 28px;
+}
+#biaoge li span{width:151px;line-height:38px;display: block;height:38px;float: left;text-align: right;}
+#biaoge input{height:36px;width:300px;border: 1px solid #ddd;padding: 0;float: left;}
+#tijiao{background: red;border: none;color: #fff;text-align: center;font-size: 16px;}
+#tijiao:hover{opacity: .7;}
+#biaoge li a{width:104px;height:36px;line-height: 36px;text-align: center;color: #777;
+font-size: 12px;display: block;margin-left: 10px;float: left;border: solid 1px #eee;}
+#biaoge li a:hover{border: 1px solid #999;}
+#biaoge .copdiv{
+	margin-left: 5px;float: left; color: #aaa; padding: 8px 5px; min-width: 60px;border: 1px solid #ddd;
+	background: #fff; font-size:12px; display: none;
+}
+#biaoge .yanzheng{
+	margin-left: 5px;float: left; color: red; padding: 8px 5px; min-width: 60px;border: 1px solid #ddd;
+	background: #fff; font-size:12px; display: none;
+}
+#input4{text-align: center; }
+#huakuai{    width: 46px;
+    position: relative;
+    left: -302px;
+    top: 0;
+    height: 36px;
+    display: inline-block;
+    line-height: 38px;
+    border: 1px solid #cccccc;
+    background: #fff;
+    z-index: 3;
+    cursor: move;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    font-family: "Arial Narrow";}
+
+footer{
+	width:990px; height:185px; margin: 0 auto; padding-top: 20px;	
+}
+#u1{
+	width: 600px;height:44px;
+}
+#u1 li{
+	float: left; padding-right: 13px;
+}
+#u1 a{
+	font-size: 12px;color:#666;
+}
+.fuhao{font-size:9px;color: #aaa;}
+.ppp2{
+	font: 12px/22px Arial;color: #999;
+}
+#zuihou{
+	width:990px;margin: 5px auto 0;padding: 10px 0 25px;border-top: 1px solid #e6e6e6;
+}
+#zuihou i{width:35px;height: 35px;display: block;float: left;}
+#zuihou b{padding: 0 30px 0 5px;width: 53px;height:36px;display: block;float: left; font: 12px/18px "\65b0\5b8b\4f53";
+    color: #999;}
+#zuihou i:nth-of-type(1){background: url(https://misc.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) 0 -180px;}
+#zuihou i:nth-of-type(2){background: url(https://misc.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) -35px -180px;}
+#zuihou i:nth-of-type(3){background: url(https://misc.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) -70px -180px;}
+#zuihou i:nth-of-type(4){background: url(https://misc.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) -105px -180px;}
+#zuihou i:nth-of-type(5){background: url(https://misc.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) -140px -180px;}
